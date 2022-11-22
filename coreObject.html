@@ -1,0 +1,91 @@
+<script>
+//lesson 37
+    /*function kopimix(bahan1, bahan2, bahan3){
+       this.bahan1 = bahan1,
+       this.bahan2 = bahan2,
+       this.bahan3 = bahan3
+}
+    var kopiNada = new kopimix('gula', 'kopi', 'krim');
+    var kopiHana = new kopimix('gula', 'kopi', 'kental manis')
+    document.write(kopiNada.bahan3)
+    document.write(kopiHana.bahan3)
+
+    var courses = new array('menjahit', 'menari', 'memasak')
+    courses[2] = 'bernyanyi'
+    document.write(courses[2])
+    console.log(courses[2])
+
+    //lesson 38
+    var courses = new array(3)
+    courses[0] = 'menjahit'
+    courses[1] = 'memasak'
+    courses[2] = 'menari'
+
+    //lesson 39
+    var courses = ['menjahit', 'memasak', 'menari']
+    document.write(courses.length)
+
+    //lesson 40 (array asosiatif dalam js adalah object)
+    var person = []
+    person['nama'] = 'nada'
+    person['age'] = 17
+    document.write(person['nama'])
+    document.write(person['age'])
+
+    //lesson 41 math
+    //document.write(Math.PI)
+    //var number = Math.sqrt(81)
+    //document.write(number+'<br/>')
+    var random = Math.ceil(Math.random()*10)
+    document.write(random+'<br/>')
+
+    var year = '2005'
+    document.write(calcCent(year))
+    function calcCent(year){
+        var count = Math.floor(year/100)
+        return count
+    }
+
+    var number = prompt("masukan angka nya", "")
+    var answer = Math.sqrt(number)
+    alert("nilai akar pangkat dua "+number+" adalah "+answer)
+
+    var r = prompt("Berapakah jari-jari")
+    var t = prompt("Berapakah tinggi")
+
+    var volume = Math.floor(Math.PI*(Math.pow(r,2)*t))
+    alert("volume tabung dengan tinggi = " +t+ "m dan jari-jari = " +r+ "m adalah " +volume+ " m2" )
+
+    var nama = prompt("Masukan Nama Anda", "")
+    function myAlert(){
+        alert("Selamat datang "+nama);
+    }
+    setInterval(myAlert, 4000)
+    
+    //lesson 42
+    function printTime(){
+        var d = new Date();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        var secs = d.getSeconds();
+    document.body.innerHTML = hours+':'+minutes+':'+secs;
+}
+setInterval(printTime, 1000)*/
+
+function getWeekDay(year, month, day) {
+    var names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var d = new Date(year, month, day);
+    
+    var day = d.getDay();
+    return names[day]
+}
+
+function main() {
+    var year = prompt('masukan tahun...')
+    var month = prompt('masukan bulan...')
+    var day = prompt('masukan tanggal...')
+    var dDay = getWeekDay(year,month-1,day)
+    console.log(dDay)
+    alert('Hari lahir anda adalah hari '+dDay)
+}
+</script>

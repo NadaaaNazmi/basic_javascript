@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* //lesson 31
+        var person = {
+           name : 'Nada',
+           age : 17,
+           favcolor : 'bluesky'
+        }
+        console.log(person.name)
+        console.log(person['name']) 
+
+         //lesson 32
+        function person(name, age, favcolor)
+        {
+        this.name = name,
+        this.age = age,
+        this.favcolor = favcolor
+        }
+        var p1 = new person('someone', 17, 'blue')
+        var p2 = new person('nad', 17, 'grey')
+
+        document.write(p2['name'])
+        document.write(p1.name)
+
+        var k1 = new person('siayah', 45, 'biru')
+        var k2 = new person('siibu', 36, 'pink')
+        var k3 = new person('sikakak', 17, 'hitam')
+        var k4 = new person('siadik', 12, 'merah')
+
+        document.write(k1.age)*/
+
+        //lesson 35
+        function person(name, age){
+            this.name = name,
+            this.age = age,
+            this.changeage = function changeage(age){
+                this.age = age
+            }
+        }
+        /*var d1 = new person('nad', 17)
+        console.log(d1.name)
+        d1.changename('haha')
+        console.log(d1.name)*/
+
+        var d1 = new person('nad', 17)
+        console.log(d1.age)
+        d1.changeage(18)
+        console.log(d1.age)
+
+
+    </script>
+</body>
+</html>
